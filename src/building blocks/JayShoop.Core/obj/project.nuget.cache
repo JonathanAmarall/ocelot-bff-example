@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "nb/qjqFtEiZLa0ip98rLV5gvTkTuV/lGaV8CvjgazlrhSSSvqv/D5DNe5LZ2J3ITo5pOK8ukHOIseXGPeveh9g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jonathan.cequim\\Documents\\Projetcs\\JayShop\\JayShop\\src\\building blocks\\JayShoop.Core\\JayShoop.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jonathan.cequim\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
+    "C:\\Users\\jonathan.cequim\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

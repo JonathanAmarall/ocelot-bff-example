@@ -1,0 +1,33 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/Products",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "UpstreamPathTemplate": "/api/Catalog",
+      "Key": "product"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Stocks",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "UpstreamPathTemplate": "/api/Catalog",
+      "Key": "stock"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5500"
+  }
+}

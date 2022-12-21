@@ -1,0 +1,12 @@
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\building blocks\JayShoop.Core\bin\Debug\net6.0\JayShoop.Core.deps.json
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\building blocks\JayShoop.Core\bin\Debug\net6.0\JayShoop.Core.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\building blocks\JayShoop.Core\bin\Debug\net6.0\JayShoop.Core.pdb
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\building blocks\JayShoop.Core\obj\Debug\net6.0\JayShoop.Core.csproj.AssemblyReference.cache
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\building blocks\JayShoop.Core\obj\Debug\net6.0\JayShoop.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\building blocks\JayShoop.Core\obj\Debug\net6.0\JayShoop.Core.AssemblyInfoInputs.cache
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\building blocks\JayShoop.Core\obj\Debug\net6.0\JayShoop.Core.AssemblyInfo.cs
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\building blocks\JayShoop.Core\obj\Debug\net6.0\JayShoop.Core.csproj.CoreCompileInputs.cache
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\building blocks\JayShoop.Core\obj\Debug\net6.0\JayShoop.Core.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\building blocks\JayShoop.Core\obj\Debug\net6.0\refint\JayShoop.Core.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\building blocks\JayShoop.Core\obj\Debug\net6.0\JayShoop.Core.pdb
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\building blocks\JayShoop.Core\obj\Debug\net6.0\ref\JayShoop.Core.dll
