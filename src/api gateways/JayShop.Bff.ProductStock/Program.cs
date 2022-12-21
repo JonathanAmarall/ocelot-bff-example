@@ -1,31 +1,46 @@
+using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 
-IConfiguration configuration = new ConfigurationBuilder()
-                            .AddJsonFile("ocelot.json")
-                            .Build(); 
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Configuration.AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
+
+builder.Services.AddOcelot(builder.Configuration);
+
+builder.Services.AddSwaggerForOcelot(builder.Configuration,
+  (o) =>
+  {
+      o.GenerateDocsForGatewayItSelf = true;
+      o.GenerateDocsForAggregates = true;
+  });
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddOcelot(configuration);
 
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
+
+app.UseStaticFiles();
 
 app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseOcelot().Wait();
+app.UseSwaggerForOcelotUI(opt =>
+{
+    opt.PathToSwaggerGenerator = "/swagger/docs";
+})
+.UseOcelot()
+.Wait();
 
 app.Run();
+

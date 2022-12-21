@@ -1,7 +1,7 @@
 {
-  "ReRoutes": [
+  "Routes": [
     {
-      "DownstreamPathTemplate": "/api/Products",
+      "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -10,11 +10,12 @@
         }
       ],
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "UpstreamPathTemplate": "/api/Catalog",
-      "Key": "product"
+      "UpstreamPathTemplate": "/api/Products/{everything}",
+      "Key": "product",
+      "SwaggerKey": "products"
     },
     {
-      "DownstreamPathTemplate": "/api/Stocks",
+      "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -23,11 +24,35 @@
         }
       ],
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "UpstreamPathTemplate": "/api/Catalog",
-      "Key": "stock"
+      "UpstreamPathTemplate": "/api/Stocks/{everything}",
+      "Key": "stock",
+      "SwaggerKey": "stocks"
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "products",
+      "Config": [
+        {
+          "Name": "Products API",
+          "Version": "v1",
+          "Url": "http://localhost:5000/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "stocks",
+      "Config": [
+        {
+          "Name": "Stock API",
+          "Version": "v1",
+          "Url": "http://localhost:5002/swagger/v1/swagger.json"
+        }
+      ]
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:5500"
+    "BaseUrl": "http://localhost"
   }
+
 }
