@@ -4,6 +4,7 @@
 The project basically consists of two API Services:
  - JayShop.Product.API
  - JayShop.Stock.API
+ 
 An API project in which the Ocelot library for ApiGateway is used, which communicates with API services.
 
 ## Postman Collection
