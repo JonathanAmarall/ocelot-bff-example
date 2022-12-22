@@ -24,7 +24,7 @@
       ],
       "UpstreamHttpMethod": [ "Get" ],
       "UpstreamPathTemplate": "/api/gateway-product/Product/{id}",
-      "Key": "product"
+      "Key": "find-product"
     },
     {
       "DownstreamPathTemplate": "/api/{everything}",
@@ -58,7 +58,7 @@
     {
       "RouteKeys": [
         "stock-by-product",
-        "product"
+        "find-product"
       ],
       "UpstreamPathTemplate": "/api/stock-product/{id}"
       //"Aggregator": "FakeDefinedAggregator"
