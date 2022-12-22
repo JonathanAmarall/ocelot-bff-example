@@ -279,3 +279,16 @@ C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop
 C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Stock.API\obj\Debug\net6.0\JayShop.Stock.API.pdb
 C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Stock.API\obj\Debug\net6.0\JayShop.Stock.API.genruntimeconfig.cache
 C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Stock.API\obj\Debug\net6.0\ref\JayShop.Stock.API.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Stock.API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Stock.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Stock.API\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Stock.API\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Stock.API\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Stock.API\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Stock.API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Stock.API\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Stock.API\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Stock.API\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Stock.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Stock.API\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Stock.API\bin\Debug\net6.0\System.Memory.Data.dll

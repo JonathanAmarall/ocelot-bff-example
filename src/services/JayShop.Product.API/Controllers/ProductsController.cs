@@ -17,7 +17,7 @@ namespace JayShop.Product.API.Controllers
 
         // GET: api/Products
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Models.Product>>> GetProducts()
+        public async Task<ActionResult<ICollection<Models.Product>>> GetProducts()
         {
             return await _context.Products.ToListAsync();
         }

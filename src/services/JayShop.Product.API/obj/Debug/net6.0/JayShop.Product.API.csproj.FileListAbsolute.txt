@@ -279,3 +279,16 @@ C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop
 C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Product.API\obj\Debug\net6.0\JayShop.Product.API.pdb
 C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Product.API\obj\Debug\net6.0\JayShop.Product.API.genruntimeconfig.cache
 C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Product.API\obj\Debug\net6.0\ref\JayShop.Product.API.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Product.API\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Product.API\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Product.API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Product.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Product.API\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Product.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Product.API\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Product.API\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Product.API\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Product.API\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Product.API\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Product.API\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\jonathan.cequim\Documents\Projetcs\JayShop\JayShop\src\services\JayShop.Product.API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll

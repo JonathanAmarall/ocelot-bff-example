@@ -1,3 +1,4 @@
+using JayShop.Bff.Catalog.Aggregators;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -9,12 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Configuration.AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
 
-builder.Services.AddOcelot(builder.Configuration);
+builder.Services.AddOcelot(builder.Configuration)
+ .AddSingletonDefinedAggregator<FakeDefinedAggregator>();
 
 builder.Services.AddSwaggerForOcelot(builder.Configuration,
   (o) =>
   {
-      o.GenerateDocsForGatewayItSelf = true;
       o.GenerateDocsForAggregates = true;
   });
 

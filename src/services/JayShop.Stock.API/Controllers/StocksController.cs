@@ -17,7 +17,7 @@ namespace JayShop.Stock.API.Controllers
 
         // GET: api/Stocks
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Models.Stock>>> GetStocks()
+        public async Task<ActionResult<ICollection<Models.Stock>>> GetStocks()
         {
             return await _context.Stocks.ToListAsync();
         }
@@ -36,10 +36,10 @@ namespace JayShop.Stock.API.Controllers
             return stock;
         }
 
-        [HttpGet("product/{productId}")]
-        public async Task<ActionResult<Models.Stock>> GetStockByProduct(Guid productId)
+        [HttpGet("product/{id}")]
+        public async Task<ActionResult<Models.Stock>> GetStockByProduct(Guid id)
         {
-            var stock = await _context.Stocks.FirstOrDefaultAsync(x => x.ProductId == productId);
+            var stock = await _context.Stocks.FirstOrDefaultAsync(x => x.ProductId == id);
 
             if (stock == null)
             {
