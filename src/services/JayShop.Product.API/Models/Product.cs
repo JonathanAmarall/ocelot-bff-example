@@ -15,5 +15,12 @@ namespace JayShop.Product.API.Models
         public decimal Value { get; private set; }
         public decimal SaleValue { get; private set; }
 
+        public void UpdateInfo(string description, decimal value, decimal saleValue)
+        {
+            Description = description;
+            Value = value;  
+            SaleValue = saleValue;
+            UpdateAt = DateTime.Now;
+        }
     }
 }

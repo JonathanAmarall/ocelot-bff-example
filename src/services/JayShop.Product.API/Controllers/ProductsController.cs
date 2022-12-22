@@ -1,4 +1,6 @@
 ﻿using JayShop.Product.API.Data;
+using JayShop.Product.API.DTO;
+using JayShop.Product.API.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -39,14 +41,21 @@ namespace JayShop.Product.API.Controllers
         // PUT: api/Products/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutProduct(Guid id, Models.Product product)
+        public async Task<IActionResult> PutProduct(Guid id, ProductDTO product)
         {
             if (id != product.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(product).State = EntityState.Modified;
+            Models.Product? existentProduct = await _context.Products.FirstOrDefaultAsync(x => x.Id == product.Id);
+
+            if (existentProduct == null)
+                return BadRequest();
+
+            existentProduct.UpdateInfo(product.Description, product.Value, product.SaleValue);
+
+            _context.Entry(existentProduct).State = EntityState.Modified;
 
             try
             {

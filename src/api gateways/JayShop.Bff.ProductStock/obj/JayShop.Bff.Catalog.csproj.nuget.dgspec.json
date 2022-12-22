@@ -40,10 +40,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "MMLib.SwaggerForOcelot": {
-              "target": "Package",
-              "version": "[6.0.0, )"
-            },
             "Ocelot": {
               "target": "Package",
               "version": "[18.0.0, )"

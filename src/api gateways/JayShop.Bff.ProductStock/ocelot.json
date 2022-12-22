@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/Products/{everything}",
+      "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -10,9 +10,8 @@
         }
       ],
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "UpstreamPathTemplate": "/api/bff/products/{everything}",
-      "Key": "product",
-      "SwaggerKey": "products"
+      "UpstreamPathTemplate": "/api/gateway-product/{everything}",
+      "Key": "product"
     },
     {
       "DownstreamPathTemplate": "/api/Products/{id}",
@@ -24,12 +23,11 @@
         }
       ],
       "UpstreamHttpMethod": [ "Get" ],
-      "UpstreamPathTemplate": "/api/bff/products/{id}",
-      "Key": "product-by-id",
-      "SwaggerKey": "product-by-id"
+      "UpstreamPathTemplate": "/api/gateway-product/Product/{id}",
+      "Key": "product"
     },
     {
-      "DownstreamPathTemplate": "/api/Stocks",
+      "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -38,9 +36,8 @@
         }
       ],
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "UpstreamPathTemplate": "/api/bff/stocks",
-      "Key": "stock",
-      "SwaggerKey": "stocks"
+      "UpstreamPathTemplate": "/api/gateway-stock/{everything}",
+      "Key": "stock"
     },
     {
       "DownstreamPathTemplate": "/api/Stocks/Product/{id}",
@@ -52,62 +49,19 @@
         }
       ],
       "UpstreamHttpMethod": [ "Get"],
-      "UpstreamPathTemplate": "/api/bff/stocks/product/{id}",
-      "Key": "stock-by-product",
-      "SwaggerKey": "stocks-by-product"
+      "UpstreamPathTemplate": "/api/gateway-stock/product/{id}",
+      "Key": "stock-by-product"
     }
   ],
-  "SwaggerEndPoints": [
-    {
-      "Key": "products",
-      "Config": [
-        {
-          "Name": "Products API",
-          "Version": "v1",
-          "Url": "http://localhost:5000/swagger/v1/swagger.json"
-        }
-      ]
-    },
-    {
-      "Key": "product-by-id",
-      "Config": [
-        {
-          "Name": "Products API",
-          "Version": "v1",
-          "Url": "http://localhost:5000/swagger/v1/swagger.json"
-        }
-      ]
-    },
-    {
-      "Key": "stocks",
-      "Config": [
-        {
-          "Name": "Stock API",
-          "Version": "v1",
-          "Url": "http://localhost:5002/swagger/v1/swagger.json"
-        }
-      ]
-    },
-    {
-      "Key": "stocks-by-product",
-      "Config": [
-        {
-          "Name": "Stock API",
-          "Version": "v1",
-          "Url": "http://localhost:5002/swagger/v1/swagger.json"
-        }
-      ]
-    }
-  ],
+
   "Aggregates": [
     {
       "RouteKeys": [
         "stock-by-product",
-        "product-by-id"
+        "product"
       ],
-      "UpstreamPathTemplate": "/bff/stocks/product/{id}",
-      "Aggregator": "FakeDefinedAggregator"
-
+      "UpstreamPathTemplate": "/api/stock-product/{id}"
+      //"Aggregator": "FakeDefinedAggregator"
     }
   ],
   "GlobalConfiguration": {}

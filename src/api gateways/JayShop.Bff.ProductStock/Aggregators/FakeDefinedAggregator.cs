@@ -25,5 +25,4 @@ namespace JayShop.Bff.Catalog.Aggregators
             return new DownstreamResponse(stringContent, HttpStatusCode.OK, new List<KeyValuePair<string, IEnumerable<string>>>(), "OK");
         }
     }
- 
 }

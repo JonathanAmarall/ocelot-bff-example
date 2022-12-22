@@ -1,7 +1,4 @@
 using JayShop.Bff.Catalog.Aggregators;
-using Microsoft.OpenApi.Models;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 
@@ -13,11 +10,11 @@ builder.Configuration.AddJsonFile("ocelot.json", optional: false, reloadOnChange
 builder.Services.AddOcelot(builder.Configuration)
  .AddSingletonDefinedAggregator<FakeDefinedAggregator>();
 
-builder.Services.AddSwaggerForOcelot(builder.Configuration,
-  (o) =>
-  {
-      o.GenerateDocsForAggregates = true;
-  });
+//builder.Services.AddSwaggerForOcelot(builder.Configuration,
+//  (o) =>
+//  {
+//      o.GenerateDocsForAggregates = true;
+//  });
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -36,11 +33,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseSwaggerForOcelotUI(opt =>
-{
-    opt.PathToSwaggerGenerator = "/swagger/docs";
-})
-.UseOcelot()
+//app.UseSwaggerForOcelotUI(opt =>
+//{
+//    opt.PathToSwaggerGenerator = "/swagger/docs";
+//})
+app.UseOcelot()
 .Wait();
 
 app.Run();
